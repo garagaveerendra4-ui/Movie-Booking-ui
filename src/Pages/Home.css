@@ -1,0 +1,1114 @@
+/* ---------- Global ---------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #07111f;
+  color: white;
+}
+
+
+/* ---------- Home ---------- */
+
+.home {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #07111f;
+  color: white;
+}
+
+
+/* ---------- Navbar ---------- */
+
+.navbar {
+  width: 100%;
+  height: 70px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding: 0 25px;
+
+  background-color: #081525;
+
+  border: 1px solid #233e5f;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+
+  box-sizing: border-box;
+}
+
+
+/* ---------- Logo ---------- */
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+
+/* ---------- Navigation Links ---------- */
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;    
+  padding-right: 20px; 
+  margin-right: 40px;  
+  margin-left: auto;      
+}
+
+.nav-links a {
+  color: #d5dbe3;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.nav-links a:hover {
+  color: #ffb800;
+}
+
+
+/* ---------- Right Side ---------- */
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+
+/* ---------- Buttons ---------- */
+
+.city-button,
+.search-button,
+.profile-button {
+  background-color: #101f32;
+  color: white;
+
+  border: 1px solid #26384e;
+  border-radius: 6px;
+
+  padding: 9px 13px;
+
+  cursor: pointer;
+}
+
+.city-button:hover,
+.search-button:hover,
+.profile-button:hover {
+  border-color: #ffb800;
+  color: #ffb800;
+}
+
+/* ---------- Hero Section ---------- */
+
+.hero {
+  width: calc(100% - 40px);
+  height: 600px;
+
+  margin: 20px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 60px 70px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #07111f 0%,
+      rgba(7, 17, 31, 0.9) 35%,
+      rgba(7, 17, 31, 0.3) 75%
+    ),
+    url("https://cdn.district.in/movies-assets/images/cinema/Doraemon--poster-aa150b70-6dff-11f1-9444-c504df2f3dc4.jpg")
+    center / cover no-repeat;
+
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+
+
+
+.hero-content {
+  max-width: 550px;
+}
+
+
+.featured-text {
+  color: #ffb800;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 18px;
+}
+
+
+.movie-info {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 20px;
+
+  color: #d5dbe3;
+  font-size: 14px;
+}
+
+
+.hero-description {
+  color: #b8c1cc;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+
+.book-button {
+  background-color: #ffb800;
+  color: #111;
+
+  border: none;
+  border-radius: 6px;
+
+  padding: 12px 25px;
+
+  font-size: 15px;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+
+.book-button:hover {
+  background-color: #ffc933;
+}   
+
+/* ---------- Movies Section ---------- */
+
+.movies-section {
+  padding: 40px 50px 60px;
+}
+
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 25px;
+}
+
+
+.section-header h2 {
+  font-size: 28px;
+  color: white;
+}
+
+
+.view-all {
+  background: none;
+  border: none;
+
+  color: #ffb800;
+
+  font-size: 14px;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+
+/* ---------- Movie Grid ---------- */
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+
+/* ---------- Movie Card ---------- */
+
+.movie-card {
+  background-color: #0d1b2d;
+  border: 1px solid #233e5f;
+  border-radius: 8px;
+  overflow: hidden;
+  
+}
+
+
+.movie-card:hover {
+  transform: translateY(-4  px);
+
+  border-color: #ffb800;
+}
+
+
+/* ---------- Poster ---------- */
+
+.movie-poster {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  display: block;
+}
+
+/* ---------- Card Content ---------- */
+
+.movie-card-content {
+  padding: 15px;
+}
+
+
+.movie-card-content h3 {
+  font-size: 17px;
+
+  color: white;
+
+  margin-bottom: 8px;
+}
+
+
+.rating {
+  color: #ffb800;
+
+  font-size: 14px;
+
+  margin-bottom: 8px;
+}
+
+
+.movie-meta {
+  color: #9da9b8;
+
+  font-size: 13px;
+
+  margin-bottom: 15px;
+}
+
+
+.movie-card .book-button {
+  width: 100%;
+
+  padding: 9px 10px;
+}
+
+.city-card,
+.login-card {
+  position: absolute;
+
+  top: 75px;
+  right: 25px;
+
+  width: 300px;
+
+  background-color: #0d1b2d;
+
+  border: 1px solid #233e5f;
+  border-radius: 10px;
+
+  padding: 20px;
+
+  z-index: 1000;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 20px;
+}
+
+.card-header h3 {
+  color: white;
+}
+
+.card-header button {
+  background: none;
+  border: none;
+
+  color: #9da9b8;
+
+  font-size: 18px;
+
+  cursor: pointer;
+}
+.city-card input,
+.login-card input {
+  width: 100%;
+
+  padding: 10px;
+
+  margin-bottom: 12px;
+
+  box-sizing: border-box;
+
+  background-color: #101f32;
+
+  border: 1px solid #26384e;
+  border-radius: 6px;
+
+  color: white;
+
+  outline: none;
+}
+.city-card > button {
+  width: 100%;
+
+  padding: 10px;
+
+  margin-bottom: 8px;
+
+  text-align: left;
+
+  background-color: transparent;
+
+  border: none;
+
+  color: #d5dbe3;
+
+  border-radius: 5px;
+
+  cursor: pointer;
+}
+
+.city-card input,
+.login-card input {
+  width: 100%;
+
+  padding: 10px;
+
+  margin-bottom: 12px;
+
+  box-sizing: border-box;
+
+  background-color: #101f32;
+
+  border: 1px solid #26384e;
+  border-radius: 6px;
+
+  color: white;
+
+  outline: none;
+}
+
+.city-card > button {
+  width: 100%;
+
+  padding: 10px;
+
+  margin-bottom: 8px;
+
+  text-align: left;
+
+  background-color: transparent;
+
+  border: none;
+
+  color: #d5dbe3;
+
+  border-radius: 5px;
+
+  cursor: pointer;
+}
+
+.city-card > button:hover {
+  background-color: #16283e;
+  color: #ffb800;
+}
+
+.signin-button {
+  width: 100%;
+
+  padding: 11px;
+
+  background-color: #ffb800;
+
+  color: #111;
+
+  border: none;
+
+  border-radius: 6px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+.signin-button:hover {
+  background-color: #625226;
+  color:white
+}
+
+.login-card p {
+  margin-top: 15px;
+
+  text-align: center;
+
+  color: #9da9b8;
+
+  font-size: 13px;
+}
+
+.login-card span {
+  color: #ffb800;
+  cursor: pointer;
+}
+.movie-details-overlay {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.75);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 2000;
+}
+.movie-details {
+  position: relative;
+
+  width: 850px;
+  max-width: 90%;
+
+  display: flex;
+  gap: 35px;
+
+  padding: 35px;
+
+  background-color: #0d1b2d;
+
+  border: 1px solid #233e5f;
+  border-radius: 12px;
+
+  box-sizing: border-box;
+}
+.details-poster {
+  width: 260px;
+  height: 390px;
+
+  object-fit: cover;
+
+  border-radius: 8px;
+
+  flex-shrink: 0;
+}
+.details-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.details-content h1 {
+  color: white;
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+.details-info {
+  display: flex;
+  gap: 15px;
+
+  color: #d5dbe3;
+
+  font-size: 14px;
+
+  margin-bottom: 20px;
+}
+
+.details-info span:first-child {
+  color: #ffb800;
+}
+.details-description {
+  color: #aeb8c5;
+
+  line-height: 1.7;
+
+  margin-bottom: 30px;
+}
+.details-buttons {
+  display: flex;
+  gap: 15px;
+}
+.trailer-button {
+  padding: 11px 18px;
+
+  background-color: transparent;
+
+  color: #ffb800;
+
+  border: 1px solid #ffb800;
+
+  border-radius: 6px;
+
+  text-decoration: none;
+
+  font-weight: bold;
+}
+.details-book-button {
+  padding: 11px 18px;
+
+  background-color: #ffb800;
+
+  color: #111;
+
+  border: none;
+
+  border-radius: 6px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+}
+.close-details {
+  position: absolute;
+
+  top: 15px;
+  right: 15px;
+
+  background: none;
+
+  border: none;
+
+  color: #9da9b8;
+
+  font-size: 20px;
+
+  cursor: pointer;
+}
+
+.close-details:hover {
+  color: white;
+}
+.theatre-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.75);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 3000;
+}
+
+.theatre-card {
+  width: 700px;
+  max-width: 90%;
+
+  background-color: #0d1b2d;
+
+  border: 1px solid #233e5f;
+  border-radius: 12px;
+
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.theatre-card .card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.small-title {
+  color: #ffb800;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+
+.theatre-card h2 {
+  color: white;
+  font-size: 26px;
+}
+
+.close-theatre {
+  background: none;
+  border: none;
+  color: #9da9b8;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.close-theatre:hover {
+  color: white;
+}
+
+.select-text {
+  color: #9da9b8;
+  margin: 25px 0 15px;
+}
+
+.theatre-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.theatre-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 18px;
+
+  background-color: #101f32;
+  border: 1px solid #26384e;
+  border-radius: 8px;
+}
+
+.theatre-item h3 {
+  color: white;
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.theatre-item p {
+  color: #8f9baa;
+  font-size: 13px;
+}
+
+.theatre-item button {
+  background-color: #ffb800;
+  color: #111;
+
+  border: none;
+  border-radius: 6px;
+
+  padding: 9px 14px;
+
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.theatre-item button:hover {
+  background-color: #ffc933;
+}
+
+/* ================= SHOW TIMING ================= */
+
+.timing-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.75);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 4000;
+}
+
+
+.timing-card {
+  width: 700px;
+  max-width: 90%;
+
+  background-color: #0d1b2d;
+
+  border: 1px solid #233e5f;
+  border-radius: 12px;
+
+  padding: 30px;
+
+  box-sizing: border-box;
+}
+
+
+.theatre-name {
+  color: #9da9b8;
+  font-size: 14px;
+
+  margin-top: 8px;
+}
+
+
+/* DATE */
+
+.date-section {
+  margin-top: 30px;
+}
+
+
+.date-section h3,
+.show-section h3 {
+  color: white;
+  font-size: 16px;
+
+  margin-bottom: 15px;
+}
+
+
+.date-list {
+  display: flex;
+  gap: 10px;
+}
+
+
+.date-button {
+  width: 65px;
+  height: 65px;
+
+  background-color: #101f32;
+
+  border: 1px solid #26384e;
+  border-radius: 8px;
+
+  color: #d5dbe3;
+
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.date-button span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+.date-button small {
+  margin-top: 3px;
+  font-size: 11px;
+}
+
+
+.date-button:hover,
+.date-button.active {
+  border-color: #ffb800;
+  color: #ffb800;
+}
+
+
+/* SHOW TIMES */
+
+.show-section {
+  margin-top: 30px;
+}
+
+
+.show-times {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+
+.show-time {
+  padding: 11px 18px;
+
+  background-color: #101f32;
+
+  border: 1px solid #26384e;
+  border-radius: 6px;
+
+  color: #d5dbe3;
+
+  cursor: pointer;
+
+  font-size: 14px;
+}
+
+
+.show-time:hover {
+  border-color: #ffb800;
+  color: #ffb800;
+}
+
+/* ================= SEAT SELECTION ================= */
+
+.seat-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.8);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 5000;
+}
+
+.seat-card {
+  width: 750px;
+  max-width: 92%;
+
+  max-height: 90vh;
+  overflow-y: auto;
+
+  background-color: #0d1b2d;
+
+  border: 1px solid #233e5f;
+  border-radius: 12px;
+
+  padding: 30px;
+
+  box-sizing: border-box;
+}
+
+.seat-theatre {
+  color: #9da9b8;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+
+/* SCREEN */
+
+.screen {
+  width: 70%;
+
+  margin: 30px auto 40px;
+
+  padding: 10px;
+
+  text-align: center;
+
+  background-color: #26384e;
+
+  color: #d5dbe3;
+
+  border-radius: 50% 50% 5px 5px;
+
+  font-size: 12px;
+  font-weight: bold;
+
+  letter-spacing: 2px;
+}
+
+
+/* SEAT LAYOUT */
+
+.seat-layout {
+  display: flex;
+  flex-direction: column;
+
+  gap: 12px;
+
+  align-items: center;
+}
+
+.seat-row {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+}
+
+.row-name {
+  width: 20px;
+
+  color: #9da9b8;
+
+  font-size: 13px;
+}
+
+
+/* SEAT */
+
+.seat {
+  width: 48px;
+  height: 38px;
+
+  border-radius: 6px;
+
+  font-size: 12px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+
+/* AVAILABLE */
+
+.seat.available {
+  background-color: #173c2b;
+
+  border: 1px solid #2e8b57;
+
+  color: #7de2a8;
+}
+
+
+/* OCCUPIED */
+
+.seat.occupied {
+  background-color: #402025;
+
+  border: 1px solid #70343d;
+
+  color: #9b6269;
+
+  cursor: not-allowed;
+}
+
+
+/* SELECTED */
+
+.seat.selected {
+  background-color: #ffb800;
+
+  border: 1px solid #ffb800;
+
+  color: #111;
+}
+
+
+/* HOVER */
+
+.seat.available:hover {
+  border-color: #ffb800;
+}
+
+
+/* LEGEND */
+
+.seat-legend {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 25px;
+
+  margin-top: 30px;
+
+  color: #9da9b8;
+
+  font-size: 13px;
+}
+
+.seat-legend span {
+  display: flex;
+  align-items: center;
+
+  gap: 7px;
+}
+
+.legend-box {
+  width: 13px;
+  height: 13px;
+
+  border-radius: 3px;
+
+  display: inline-block;
+}
+
+.available-box {
+  background-color: #173c2b;
+  border: 1px solid #2e8b57;
+}
+
+.occupied-box {
+  background-color: #402025;
+  border: 1px solid #70343d;
+}
+
+.selected-box {
+  background-color: #ffb800;
+}
+
+
+/* SUMMARY */
+
+.seat-summary {
+  display: flex;
+
+  justify-content: space-between;
+
+  margin-top: 30px;
+
+  padding: 18px;
+
+  background-color: #101f32;
+
+  border: 1px solid #26384e;
+
+  border-radius: 8px;
+}
+
+.seat-summary p {
+  color: #8f9baa;
+
+  font-size: 13px;
+
+  margin-bottom: 5px;
+}
+
+.seat-summary strong {
+  color: white;
+
+  font-size: 15px;
+}
+
+
+/* CONTINUE */
+
+.continue-button {
+  width: 100%;
+
+  margin-top: 20px;
+
+  padding: 12px;
+
+  background-color: #ffb800;
+
+  color: #111;
+
+  border: none;
+
+  border-radius: 6px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+.continue-button:disabled {
+  background-color: #384353;
+
+  color: #7d8794;
+
+  cursor: not-allowed;
+}
